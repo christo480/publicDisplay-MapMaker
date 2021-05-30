@@ -21,7 +21,7 @@ public class Character extends Entity
       skill= new String[]{"Bullet Volley","Activate S.T. Suit","Flash Dash","Flash Punch"};
       mov= 5;
       isAlive=true;
-      pChar="|ZO";
+      pChar=",ZO";
       
       
     }

@@ -20,13 +20,14 @@ public class movetest
       if(Math.sqrt(Math.pow(xMov-Zack.getR(),2) + Math.pow(yMov-Zack.getC(),2))<=Zack.getMov())
       {
          test.move(Zack,xMov,yMov);
+         test.printMap();
       }      
       else
       {
         System.out.println("Invalid Location. "+ Zack.getName()+ " cannot move that far.");
       }
 
-      test.printMap();
+      
       
     }
     
