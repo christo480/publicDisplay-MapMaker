@@ -17,11 +17,15 @@ public class movetest
       int xMov =input.nextInt();
       System.out.println("Input y");
       int yMov =input.nextInt();
-      //if(Math.sqrt(Math.pow(xMov-Zack.getR(),2) + Math.pow(yMov-Zack.getC(),2))<=Zack.getMov())
-      //{
-         Zack.setR(xMov);
-         Zack.setC(yMov);
-      //}
+      if(Math.sqrt(Math.pow(xMov-Zack.getR(),2) + Math.pow(yMov-Zack.getC(),2))<=Zack.getMov())
+      {
+         test.move(Zack,xMov,yMov);
+      }      
+      else
+      {
+        System.out.println("Invalid Location. "+ Zack.getName()+ " cannot move that far.");
+      }
+
       test.printMap();
       
     }

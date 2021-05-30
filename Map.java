@@ -86,10 +86,15 @@ public class Map
    }
    return null;
   }
-  public void move(Character x)
+  public void move(Character Character, int x, int y )
   {
-     mapSpace[x.getR()][x.getC()].remove(x);
-     mapSpace[x.getR()][x.getC()].add(x);
+    //remove from original location
+    mapSpace[Character.getR()][Character.getC()].remove(Character);
+    //Set new postion
+    Character.setR(x);
+    Character.setC(y);
+    //
+    mapSpace[Character.getR()][Character.getC()].add(Character);
     
   }
     

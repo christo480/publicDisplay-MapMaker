@@ -29,6 +29,10 @@ public class Character extends Entity
  
 //METHODS
   //Getters
+  public String getName()
+  {
+    return name;
+  }
   public String getpChar()
   {
    return pChar;
